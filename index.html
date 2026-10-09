@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps Internship Showcase - Static Website hosted on GitHub Pages">
+  <title>DevOps Internship | Static Website Deployment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon">&gt;_</span> DevOps<span class="highlight">Intern</span>
+      </a>
+      <nav class="nav-links" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#workflow">Deployment</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Task 5: Hosted on GitHub Pages
+      </div>
+      <h1 class="hero-title">
+        Bridging Development <br>&amp; <span class="gradient-text">Cloud Operations</span>
+      </h1>
+      <p class="hero-subtitle">
+        A lightweight, responsive static web platform built with semantic HTML5 and modern CSS3, 
+        deployed automatically via GitHub Pages as part of the DevOps Internship program.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Explore Tasks</a>
+        <a href="#workflow" class="btn btn-secondary">View Deployment Flow</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About the Project</h2>
+        <p class="section-description">
+          Demonstrating foundational cloud delivery principles: version control, static site hosting, 
+          and continuous delivery using GitHub's distributed hosting infrastructure.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-card">
+          <div class="card-icon">⚡</div>
+          <h3>Fast &amp; Serverless</h3>
+          <p>Static files are served directly from GitHub's global Content Delivery Network (CDN) with zero server overhead.</p>
+        </div>
+        <div class="card about-card">
+          <div class="card-icon">🔒</div>
+          <h3>Secure &amp; Reliable</h3>
+          <p>Delivered over HTTPS with high availability, automated SSL/TLS certificate renewal, and version-controlled rollbacks.</p>
+        </div>
+        <div class="card about-card">
+          <div class="card-icon">🔄</div>
+          <h3>Git-Driven Delivery</h3>
+          <p>Changes pushed to the main repository branch automatically trigger deployment pipelines without manual intervention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills / Tech Stack Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DevOps Toolchain</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-description">Core tooling and disciplines leveraged across internship tasks.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-pill">
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-level">Version Control</span>
+        </div>
+        <div class="skill-pill">
+          <span class="skill-name">GitHub Pages</span>
+          <span class="skill-level">Static Hosting</span>
+        </div>
+        <div class="skill-pill">
+          <span class="skill-name">HTML5 / CSS3</span>
+          <span class="skill-level">Web UI &amp; Layout</span>
+        </div>
+        <div class="skill-pill">
+          <span class="skill-name">CI / CD Pipelines</span>
+          <span class="skill-level">Automation</span>
+        </div>
+        <div class="skill-pill">
+          <span class="skill-name">Linux / Bash</span>
+          <span class="skill-level">Environment &amp; Shell</span>
+        </div>
+        <div class="skill-pill">
+          <span class="skill-name">Docker &amp; Containers</span>
+          <span class="skill-level">Virtualization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Tasks Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Internship Portfolio</span>
+        <h2 class="section-title">Featured Deliverables</h2>
+        <p class="section-description">Practical hands-on tasks completed during the internship.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="card project-card featured">
+          <div class="project-tag">Current Milestone</div>
+          <h3>Task 5: Static Website Hosting</h3>
+          <p>Designed a responsive web showcase using pure semantic HTML and CSS, configured repository hosting via GitHub Pages, and verified global accessibility.</p>
+          <ul class="project-features">
+            <li>Zero external dependencies</li>
+            <li>Fully responsive flexbox &amp; grid design</li>
+            <li>Automated branch deployment on GitHub</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-tag">DevOps Practice</div>
+          <h3>Source Control &amp; Git Branching</h3>
+          <p>Applied Git workflow best practices including feature branching, conventional commits, and clean repository maintenance.</p>
+          <ul class="project-features">
+            <li>Clean commit history</li>
+            <li>Branch protection &amp; review workflows</li>
+            <li>Markdown documentation</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-tag">DevOps Practice</div>
+          <h3>Automated Build &amp; Deployment</h3>
+          <p>Configured repository release settings to trigger automated deployments directly from the source repository upon commit verification.</p>
+          <ul class="project-features">
+            <li>Continuous static publishing</li>
+            <li>Local development preview</li>
+            <li>Rapid rollbacks via Git history</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deployment Workflow Section -->
+  <section class="section section-alt" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pipeline</span>
+        <h2 class="section-title">GitHub Pages Deployment Workflow</h2>
+        <p class="section-description">How static code travels from local workstation to global web availability.</p>
+      </div>
+
+      <div class="workflow-steps">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h4>Local Development</h4>
+          <p>Author clean HTML5 and CSS3 files, validating visual responsiveness and path consistency locally.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h4>Push to GitHub</h4>
+          <p>Stage, commit, and push repository changes to the remote <code>main</code> branch on GitHub.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h4>Pages Pipeline</h4>
+          <p>GitHub Pages detects new commits in the configured branch and initiates the automated static build.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h4>Live Production</h4>
+          <p>The site goes live at <code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code> backed by HTTPS &amp; CDN.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>DevOps Internship Project</h3>
+        <p>Built for Task 5: Static Website Deployment with GitHub Pages.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 DevOps Intern. Released under the MIT License.</p>
+    </div>
+  </footer>
+
+  <!-- Simple script for mobile navigation toggle -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-active');
+        navToggle.classList.toggle('toggle-active');
+      });
+
+      // Close menu when clicking a link
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('nav-active');
+          navToggle.classList.remove('toggle-active');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
