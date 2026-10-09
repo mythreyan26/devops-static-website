@@ -1,161 +1,27 @@
-# DevOps Internship - Task 5: Host a Static Website with GitHub Pages
+# Task 5: Host a Static Website with GitHub Pages
 
-A simple, responsive, and modern static portfolio and project showcase website built with pure semantic HTML5 and CSS3, designed to be deployed and hosted for free using **GitHub Pages**.
+## Objective
 
----
+Deploy a static website using GitHub Pages.
 
-## 📌 Project Overview
+## Technologies Used
 
-- **Task**: Task 5 - Host a Static Website with GitHub Pages
-- **Objective**: Create a clean, responsive static website and deploy it using GitHub Pages' global static hosting infrastructure.
-- **Deliverables**:
-  1. Source code repository containing `index.html`, `style.css`, and `README.md`.
-  2. Live website URL served via GitHub Pages (`https://<username>.github.io/<repository-name>/`).
+- HTML5
+- CSS3
+- GitHub
+- GitHub Pages
 
----
+## Features
 
-## 🛠️ Technologies Used
+- Responsive website layout
+- Custom CSS styling
+- Navigation and About section
+- Free static website hosting
 
-| Technology | Purpose |
-| :--- | :--- |
-| **HTML5** | Semantic structure, accessibility, and content hierarchy |
-| **CSS3** | Modern styling, responsive Flexbox/Grid layouts, and CSS variables |
-| **Git** | Distributed version control and commit history management |
-| **GitHub Pages** | Static site hosting, CDN edge distribution, and automated SSL/TLS |
+## Deployment
 
----
+The website is published using GitHub Pages from the main branch.
 
-## 📁 Repository Structure
+## Live Website
 
-```text
-Task 5/
-├── index.html     # Website homepage and structure
-├── style.css      # Modern responsive styling and design system
-└── README.md      # Comprehensive task documentation and deployment guide
-```
-
----
-
-## 💻 Local Testing & Verification
-
-Before publishing to GitHub Pages, verify the website locally to ensure styling and links render properly.
-
-### Option 1: Direct File Preview in Browser (Quickest)
-1. Navigate to the `Task 5` folder in File Explorer.
-2. Double-click `index.html` (or right-click -> **Open with** -> your preferred browser: Chrome, Edge, Firefox).
-
-### Option 2: Using Python Built-in HTTP Server (Recommended)
-Open PowerShell or your terminal in the `Task 5` directory and execute:
-
-```powershell
-# Run a local HTTP server on port 8000
-python -m http.server 8000
-```
-Then visit [`http://localhost:8000`](http://localhost:8000) in your browser.  
-*(Press `Ctrl + C` in the terminal to stop the server).*
-
-### Option 3: Using VS Code Live Server Extension
-1. Open the project folder in VS Code.
-2. Right-click on `index.html`.
-3. Select **"Open with Live Server"**.
-
----
-
-## 🚀 Step-by-Step GitHub Pages Deployment Guide
-
-Follow these exact steps when you are ready to upload and host the site on GitHub:
-
-### Step 1: Create a New GitHub Repository
-1. Log in to [GitHub](https://github.com).
-2. Click the **`+`** icon in the top right corner and select **New repository**.
-3. Name your repository (e.g., `devops-task5-static-website` or `devops-intern-task5`).
-4. Set the visibility to **Public** (GitHub Pages is free for public repositories on standard accounts).
-5. Leave "Add a README file", ".gitignore", and license **unchecked** (we already created them locally).
-6. Click **Create repository**.
-
-### Step 2: Initialize Git and Push Local Code
-Open PowerShell in the `Task 5` workspace folder and run:
-
-```powershell
-# 1. Initialize local Git repository
-git init
-
-# 2. Stage all task files
-git add .
-
-# 3. Create initial commit
-git commit -m "feat: complete Task 5 static website and documentation"
-
-# 4. Set default branch name to main
-git branch -M main
-
-# 5. Link local repository to your remote GitHub repository
-# Replace <YOUR-USERNAME> and <REPO-NAME> with your actual details:
-git remote add origin https://github.com/<YOUR-USERNAME>/<REPO-NAME>.git
-
-# 6. Push your code to GitHub
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages in Repository Settings
-1. On GitHub, navigate to your repository.
-2. Click on the **Settings** tab (gear icon at the top menu).
-3. In the left sidebar, scroll down to the **Code and automation** section and click **Pages**.
-4. Under **Build and deployment** > **Source**:
-   - Ensure **Deploy from a branch** is selected.
-   - Under **Branch**, select `main` from the dropdown and leave the folder set to `/ (root)`.
-5. Click **Save**.
-
-### Step 4: Access Your Live Website
-1. Wait **1 to 2 minutes** while GitHub deploys the site.
-2. Refresh the **Settings -> Pages** page.
-3. You will see a banner:
-   > *"Your site is live at `https://<YOUR-USERNAME>.github.io/<REPO-NAME>/`"*
-4. Click the link or **Visit site** button to view your live hosted website!
-
----
-
-## 💡 Interview Questions & Answers
-
-### 1. What is GitHub Pages?
-> **Answer**: GitHub Pages is a static site hosting service provided directly by GitHub. It takes HTML, CSS, and JavaScript files directly from a repository, runs an automated build process, and publishes them to a globally distributed Content Delivery Network (CDN) with free HTTPS enabled.
-
-### 2. Can you host dynamic apps here?
-> **Answer**: No. GitHub Pages only serves static files (HTML, CSS, client-side JavaScript, and media). It does not support server-side runtime environments such as Node.js, PHP, Python/Django, Ruby on Rails, or server-side databases (MySQL, PostgreSQL). However, dynamic client-side experiences can still be built using client-side JavaScript that interacts with external third-party APIs.
-
-### 3. What are the limits of GitHub Pages?
-> **Answer**:
-> - **Repository size**: Maximum recommended size is 1 GB.
-> - **Site size**: Published sites cannot exceed 1 GB.
-> - **Bandwidth**: Soft limit of 100 GB of bandwidth per month.
-> - **Build limit**: Up to 10 builds per hour.
-> - **Commercial restrictions**: Not intended for high-frequency e-commerce transactions or sensitive data processing.
-
-### 4. How do you update the website?
-> **Answer**: Because GitHub Pages is directly connected to your Git branch, updating the website only requires committing and pushing changes to the tracked branch:
-> ```powershell
-> git add .
-> git commit -m "Update site content"
-> git push origin main
-> ```
-> GitHub Pages automatically triggers an update workflow and redeploys the site within 1–2 minutes.
-
-### 5. What happens when you delete the repo?
-> **Answer**: When you delete the GitHub repository, the GitHub Pages deployment is permanently removed, and the live URL will immediately return a `404 Not Found` error.
-
-### 6. What is the default file that loads?
-> **Answer**: `index.html` (or `index.md` if using Jekyll) located in the published directory (root `/` or `/docs`). When a visitor requests the root URL of the site, GitHub Pages automatically resolves and serves this entry point file.
-
-### 7. Can you use a custom domain?
-> **Answer**: Yes. GitHub Pages supports custom domains (e.g., `www.yourname.com`). You configure the custom domain in the repository's **Settings -> Pages** menu under the "Custom domain" section, and add the appropriate `CNAME` or `A` records in your DNS provider's dashboard. GitHub also automatically generates and renews a free Let's Encrypt SSL/TLS certificate for custom domains.
-
----
-
-## 📋 Submission Checklist
-
-- [x] Semantic `index.html` created with responsive layout
-- [x] Modern, clean `style.css` created with responsive design
-- [x] Tested locally and verified paths & links
-- [x] All interview questions documented with clear explanations
-- [x] Clear deployment instructions prepared
-- [x] Git settings and remote upload preserved awaiting user direction
+Add your published website URL here.
